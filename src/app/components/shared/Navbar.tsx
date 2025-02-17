@@ -26,14 +26,13 @@ const navMenu: NavMenu[] = [
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isExiting, setIsExiting] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
   };
 
   return (
-    <section className="py-4 md:px-20 flex  items-center justify-between w-full">
+    <section className="py-4 md:px-10 lg:px-20 flex  items-center justify-between w-full">
       <div className="px-4 md:px-0 flex justify-between items-center w-full">
         <Image
           src="/images/Logo.svg"
@@ -85,11 +84,11 @@ const Navbar = () => {
       {/* Side menu */}
       {isMenuOpen && (
         <div
-          className={`${
-            isExiting ? "animate-slideRight" : "animate-slideLeft"
-          } fixed bg-[#4169E1] top-[80px] h-screen py-8 px-5 flex flex-col items-center justify-center md:hidden w-full z-40`}
+          className={`fixed bg-[#4169E1] top-[80px] h-screen py-8 px-5 flex flex-col items-center justify-center md:hidden w-full z-40`}
         >
-<span className="text-white font-semibold text-lg">Nothing to see here, go away</span>
+          <span className="text-white font-semibold text-lg">
+            Nothing to see here, go away
+          </span>
         </div>
       )}
     </section>

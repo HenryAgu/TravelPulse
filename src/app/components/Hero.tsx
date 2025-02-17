@@ -32,7 +32,7 @@ const Hero = () => {
 
           className={`h-screen bg-center bg-no-repeat bg-cover flex flex-col justify-end`}
         >
-          <div className="p-4 md:p-8 flex items-end justify-end">
+          <div className="p-4 md:p-8 flex md:hidden lg:flex items-end justify-end">
             <div className="flex justify-between items-end w-full">
               <p className="max-w-[364px] text-white font-semibold md:text-[42px] text-2xl md:leading-[50px]">
                 {item.text}

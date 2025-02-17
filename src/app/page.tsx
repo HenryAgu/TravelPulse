@@ -178,11 +178,11 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <section className="py-14 md:py-32 px-4 md:px-20">
+      <section className="py-14 md:py-32 px-4 md:px-10 lg:px-20">
         <div className="flex flex-col md:flex-row gap-y-7 justify-between items-start md:items-end mb-10">
-          <div className="flex flex-col gap-y-2 md:gap-y-4">
-            <h3 className="text-black font-bold text-[28px] md:text-5xl">Top Travel Sories</h3>
-            <p className="font-medium text-[#404040] text-base md:text-2xl">
+          <div className="flex flex-col gap-y-2 lg:gap-y-4">
+            <h3 className="text-black font-bold text-[28px] lg:text-5xl">Top Travel Sories</h3>
+            <p className="font-medium text-[#404040] text-base lg:text-2xl">
               Explore our latest stories from our active users
             </p>
           </div>
@@ -197,10 +197,10 @@ export default function Home() {
                 src={item.image}
                 width={744}
                 height={491}
-                className="w-full h-[300px] md:h-[491px]"
+                className="w-full h-[300px] lg:h-[491px]"
                 alt="image"
               />
-              <div className="flex flex-col md:flex-row items-start md:items-center justify-between my-2">
+              <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between my-2">
                 <p className="text-base text-[#5B5B5B] font-medium">{item.location}</p>
                 <div className="flex items-center gap-x-3 md:gap-x-3.5">
                   <p className="text-base text-[#5B5B5B] font-medium">{formatDate(today)}</p>
@@ -209,8 +209,8 @@ export default function Home() {
                 </div>
               </div>
               <div className="flex flex-col gap-y-2">
-                <h4 className="text-black font-bold text-2xl md:text-4xl">{item.title}</h4>
-                <p className="md:text-lg text-base text-black font-medium">{item.preview}</p>
+                <h4 className="text-black font-bold text-2xl lg:text-4xl">{item.title}</h4>
+                <p className="lg:text-lg text-base text-black font-medium">{item.preview}</p>
                 <Link href={item.link} className="mt-2 flex gap-x-4 items-center">
                   <span className="font-semibold text-[#4169E1] text-base">Read Full Post</span>
                   <Image
