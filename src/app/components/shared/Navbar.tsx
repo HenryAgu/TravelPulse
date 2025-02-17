@@ -32,14 +32,6 @@ const Navbar = () => {
     setIsMenuOpen((prev) => !prev);
   };
 
-  const handleClose = () => {
-    setIsExiting(true);
-    setTimeout(() => {
-      setIsMenuOpen(false);
-      setIsExiting(false);
-    }, 500);
-  };
-
   return (
     <section className="py-4 md:px-20 flex  items-center justify-between w-full">
       <div className="px-4 md:px-0 flex justify-between items-center w-full">
