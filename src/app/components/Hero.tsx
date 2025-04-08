@@ -24,7 +24,7 @@ const heroGrids: HeroGrids[] = [
 
 const Hero = () => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-3 h-full md:h-screen relative w-full">
+    <section className="grid grid-cols-1 md:grid-cols-3 h-full md:h-screen relative container mx-auto w-full">
       {heroGrids.map((item, index) => (
         <div
           key={index}

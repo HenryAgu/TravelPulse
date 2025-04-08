@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="bg-[#4169E1] h-full">
-      <div className="flex flex-col gap-y-2 items-center justify-center py-32">
+      <div className="flex flex-col gap-y-2 items-center justify-center  py-14 lg:py-32 container mx-auto w-full">
         <Image
           src="/images/Logo.svg"
           width={97}

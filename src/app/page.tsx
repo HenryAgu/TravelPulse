@@ -178,7 +178,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <section className="py-14 md:py-32 px-4 md:px-10 lg:px-20">
+      <section className="py-14 md:py-32 px-4 md:px-10 lg:px-20 container mx-auto w-full">
         <div className="flex flex-col md:flex-row gap-y-7 justify-between items-start md:items-end mb-10">
           <div className="flex flex-col gap-y-2 lg:gap-y-4">
             <h3 className="text-black font-bold text-[28px] lg:text-5xl">Top Travel Sories</h3>
